@@ -60,3 +60,6 @@ O problema aparentemente foi originado pela utilização de nome de usuário do 
    >>> Source: 
     [Rstudio: Changing the Default Library (accelebrate.com)](https://www.accelebrate.com/library/how-to-articles/r-rstudio-library) 
     
+> Alterar diretório temporário de download de pacotes:
+>> Solução:
+[How to change the storage directory of the downloaded binary packages when installing - General - RStudio Community](https://community.rstudio.com/t/how-to-change-the-storage-directory-of-the-downloaded-binary-packages-when-installing/38210)
