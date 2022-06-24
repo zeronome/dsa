@@ -11,6 +11,7 @@ getwd()
 
 # Help
 ?sample
+# IMP! Mostra os argumentos de uma função
 args(sample)
 args(mean)
 args(sd)
@@ -93,6 +94,7 @@ meu_sqrt <- function(numeros) {
 }
 
 
+# IMP! COmparar tempo de execução (performance) e conteúdo de funções
 system.time(x2a <- meu_sqrt(x))
 
 system.time(x2b <- sqrt(x))

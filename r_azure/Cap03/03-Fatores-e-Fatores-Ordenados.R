@@ -35,6 +35,7 @@ fac_grad
 levels(fac_grad)
 
 # Sumarizar os dados fornece uma visão geral sobre o conteúdo das variáveis
+# IMP! Sumarizar dados categóricos através de fatores
 summary(fac_grad)
 summary(grad)
 
@@ -98,6 +99,7 @@ summary(df$Etnia)
 
 # Plot
 # Agora se fizermos um plot, temos um boxplot para estas variáveis categóricas
+# IMP! Caracter ~ (til) relaciona uma variável à outra
 plot(df$Idade~df$Etnia, xlab = 'Etnia', ylab = 'Idade', main = 'Idade por Etnia')
 
 

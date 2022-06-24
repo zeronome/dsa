@@ -40,6 +40,7 @@ system.time(df_teste2 <- read.table("TemperaturasGlobais/TemperaturasGlobais.csv
 
 
 # Usando fread()
+# IMP! Carrega dados rápido
 ?fread
 system.time(df <- fread("TemperaturasGlobais/TemperaturasGlobais.csv"))
 

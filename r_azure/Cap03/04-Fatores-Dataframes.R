@@ -25,6 +25,11 @@ df
 # Verificando que o R categorizou a última coluna como fator
 str(df)
 
+# A partir da versão 4, o R não categoriza automáticamente
+# É necessário categorizar manualmente
+df$vec3 <- as.factor(df$vec3)
+str(df)
+
 # Verificando os níveis do fator. Perceba que os níveis estão categorizados em ordem alfabética
 levels(df$vec3)
 
