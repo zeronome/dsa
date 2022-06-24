@@ -24,7 +24,7 @@ paste(nome, sobrenome)
 cat(nome, sobrenome)
 
 
-# Formatando a saída - placeholders
+# IMP! Formatando a saída - placeholders
 sprintf("A %s é nota %d", "Data Science Academy", 10) 
 
 

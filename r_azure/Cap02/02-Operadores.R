@@ -59,6 +59,7 @@ x != 8
 
 # Not
 x > 8
+# IMP! O R lê primeiro o comparador e depois faz o não "!"
 print(!x > 8)
 
 

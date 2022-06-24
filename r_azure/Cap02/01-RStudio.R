@@ -46,6 +46,7 @@ detach(package:ggplot2)
 
 
 # Se souber o nome da função
+# IMP! Mecanismos de busca e pesquisa na linguagem R
 help(mean)
 ?mean
 
@@ -61,6 +62,7 @@ help.search('randomForest')
 help.search('matplot')
 ??matplot
 RSiteSearch('matplot')
+# IMP! Mostra um exemplo de uso de uma função
 example('matplot')
 
 
