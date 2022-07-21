@@ -32,7 +32,7 @@ round(mean(unlist(lst2)))
 
 
 # do.call()
-# Executa uma função em um objeto
+# Executa uma função em um objeto - IMP!
 # *** ATENÇÃO ***
 # As funções da família apply aplicam uma função a cada elemento de um objeto (substitui um loop)
 # A função do.call aplica uma função ao objeto inteiro e não a cada elemento individualmente
@@ -99,6 +99,7 @@ temp
 frase <- "Muitas vezes temos que repetir algo diversas vezes e essas diversas vezes parecem algo estranho"
 palavras <- strsplit(frase, " ")[[1]]
 palavras
+# Identifica palavras únicas em uma string - IMP!
 unique(tolower(palavras))
 
 
@@ -130,6 +131,7 @@ antes <- data.frame(
   tipo = c('pao_e_agua','pao_e_agua_2')
 )
 
+# Separa partes de uma string a partir de um padrão - IMP!
 antes %>%
   separate(tipo, c("pao", "agua"), "_e_")
 

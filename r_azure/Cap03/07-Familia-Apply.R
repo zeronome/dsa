@@ -74,7 +74,7 @@ escola <- data.frame(Aluno = c('Bob', 'Tereza', 'Marta', 'Felipe', 'Zacarias', '
 escola
 escola$Matematica
 
-# Calculando a média por aluno - cria coluna NA no dataframe - IMP
+# Calculando a média por aluno - cria coluna NA no dataframe - IMP!
 escola$Media = NA
 escola
 
@@ -85,6 +85,7 @@ escola
 
 
 # tapply()
+# Criando dataset com valores aleatórios - IMP!
 ?gl
 tabela_basquete <-
   data.frame(equipe = gl(5, 5, labels = paste("Equipe", LETTERS[1:5])),
@@ -108,7 +109,7 @@ tapply(tabela_basquete$num_cestas, tabela_basquete$equipe, mean)
 
 # by
 ?by
-
+# Criando dataset aleatório - IMP!
 dat <- data.frame(species=c(rep(c(1,2,3), each=5)), 
                   petal.length=c(rnorm(5, 4.5, 1), 
                                  rnorm(5, 4.5, 1), 
@@ -138,7 +139,7 @@ sapply(lista1, sum)
 # vapply()
 ?vapply
 
-# A função fivenum() retorna 5 estatísticas do conjunto de dados: (minimum, lower-hinge, median, upper-hinge, maximum) 
+# A função fivenum() retorna 5 estatísticas do conjunto de dados: (minimum, lower-hinge, median, upper-hinge, maximum) - IMP!
 # https://stat.ethz.ch/R-manual/R-patched/library/stats/html/fivenum.html
 vapply(lista1, 
        fivenum, 
@@ -152,7 +153,6 @@ vapply(lista1,
 # replicate
 ?replicate
 replicate(7, runif(10))
-
 
 # mapply()
 ?mapply

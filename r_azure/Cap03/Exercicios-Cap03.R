@@ -16,6 +16,7 @@ help.search("list files")
 list.files()
 
 # Exercício 2 - Crie um dataframe a partir de 3 vetores: um de caracteres, um lógico e um de números
+# IMP! Geração de dados aleatórios
 install.packages("randomNames")
 require(randomNames)
 library(openssl)
@@ -53,7 +54,7 @@ for (j in lst2) {
 }
 
 # Exercício 5 - Considere as duas matrizes abaixo. 
-# Faça uma multiplicação element-wise e multiplicação normal entre as materizes
+# Faça uma multiplicação element-wise e multiplicação normal entre as matrizes
 mat1 <- matrix(c(1:50), nrow = 5, ncol = 5, byrow = T)
 mat1
 mat2 <- t(mat1)
@@ -85,6 +86,7 @@ mat1
 
 # Exercício 7 - Considere a matriz abaixo. Atribua valores NA de forma aletória para 50 elementos da matriz
 # Dica: use a função sample()
+# IMP! Indexação aleatória
 mat2 <- matrix(1:90, 10)
 mat2
 mat2[sample(1:length(mat2), 50, replace = FALSE)] <- NA
@@ -94,19 +96,25 @@ mat2
 mat1 <- matrix(c(1:50), nrow = 5, ncol = 5, byrow = T)
 mat1
 apply(mat1, 1, sum)
+apply(mat1, 2, sum)
 
 # Exercício 9 - Para o vetor abaixo, ordene os valores em ordem crescente
+# IMP! Indexação ordenada
 a <- c(100, 10, 10000, 1000)
 a
 sort(a)
-a[order(a)] # IMP
+a[order(a)] # mais rápido
+order(a)
+b <- replicate(20000, runif(2000))
+system.time(sort(b))
+system.time(b[order(b)]) # IMP
 
 # # Exercício 10 - Imprima no console todos os elementos da matriz abaixo que forem maiores que 15
 mat1 <- matrix(c(1:50), nrow = 5, ncol = 5, byrow = T)
 mat1
 mat1[mat1 > 15]
 
-# Exercício extra - IMP
+# Exercício extra - IMP!!
 is_oddbit <- function(n){
   return( bitwAnd(n,1) == 0)
 }

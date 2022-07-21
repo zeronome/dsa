@@ -13,7 +13,7 @@ getwd()
 # Quando você inicia o RStudio, alguns pacotes são 
 # carregados por padrão
 
-# Busca os pacotes carregados
+# Busca os pacotes carregados - IMP!
 search()
 
 # Instala e carrega os pacotes
@@ -24,14 +24,16 @@ require(dplyr)
 
 search()
 ?require
+
+# Descarrega um pacote da memória - IMP!
 detach(package:dplyr)
 
-# Lista o conteúdo dos pacotes
+# Lista o conteúdo dos pacotes - IMP!
 ?ls
 ls(pos = "package:tm")
 ls(getNamespace("tm"), all.names = TRUE)
 
-# Lista as funções de um pacote
+# Lista as funções de um pacote - IMP!
 lsf.str("package:tm")
 lsf.str("package:ggplot2")
 library(ggplot2)
@@ -55,7 +57,7 @@ head(iris)
 iris$Sepal.Length
 sum(Sepal.Length)
 
-# Permite a utilização dos nomes das colunas como objeto - usar nome coluna como objeto - IMP
+# Permite a utilização dos nomes das colunas como objeto - usar nome coluna como objeto - IMP!
 ?attach
 attach(iris)
 sum(Sepal.Length)

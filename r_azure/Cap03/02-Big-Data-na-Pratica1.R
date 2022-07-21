@@ -40,7 +40,8 @@ system.time(df_teste2 <- read.table("TemperaturasGlobais/TemperaturasGlobais.csv
 
 
 # Usando fread()
-# IMP! Carrega dados rápido
+# IMP!! Carrega dados rápido
+# IMP!! Medir tempo/velocidade de execução de uma função
 ?fread
 system.time(df <- fread("TemperaturasGlobais/TemperaturasGlobais.csv"))
 

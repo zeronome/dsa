@@ -9,6 +9,7 @@
 setwd("C:/FCD/BigDataRAzure/Cap03")
 getwd()
 
+# Conjunto de funções para busca de padrões e expressões regulares - IMP!
 # grep(pattern, x, ignore.case = FALSE, perl = FALSE, value = FALSE, fixed = FALSE, useBytes = FALSE, invert = FALSE)
 # grepl(pattern, x, ignore.case = FALSE, perl = FALSE, fixed = FALSE, useBytes = FALSE)
 # sub(pattern, replacement, x, ignore.case = FALSE, perl = FALSE, fixed = FALSE, useBytes = FALSE)
