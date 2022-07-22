@@ -99,7 +99,7 @@ mat2[sample(1:50, 10)] = NA
 mat2
 
 
-# Exercício 8 - Para a matriz abaixo, calcule a soma por linha e por coluna
+# Exercício 8 - Para a matriz abaixo, calcule a soma por linha e por coluna - IMP!
 mat1 <- matrix(c(1:50), nrow = 5, ncol = 5, byrow = T)
 mat1
 rowSums(mat1)

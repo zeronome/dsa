@@ -46,6 +46,7 @@ boxplot(Ozone ~ Month, airquality, xlab = "Month", ylab = "Ozone (ppb)")
 
 
 # Especificando os parâmetros
+# IMP!! 
 
 # col - cor do plot
 # lty - tipo de linha
@@ -67,6 +68,7 @@ boxplot(Ozone ~ Month, airquality, xlab = "Month", ylab = "Ozone (ppb)")
 # title() - adiciona título ao gráfico
 
 # Parâmetros dos Gráficos
+# IMP! Função para listar os parametros gráficos
 ?par
 par()
 par('pch')
@@ -83,11 +85,11 @@ plot(1:8, las = 3, xlab = "xlab", ylab = "ylab", main = "LAS = 3")
 legend("topright", pch = 1, col = c("blue", "red"), legend = c("Var1","Var2"))
 par(mfrow = c(1,1))
 
-# Cores disponíveis
+# Cores disponíveis - IMP!
 colors()
 
 
-# Salvando os gráficos
+# Salvando os gráficos - IMP!
 
 # png
 png("Grafico1.png", width = 500, height = 500, res = 72)
@@ -95,7 +97,7 @@ png("Grafico1.png", width = 500, height = 500, res = 72)
 plot(iris$Sepal.Length, iris$Petal.Length,
      col = iris$Species,
      main = "Gráfico gerado a partir do Iris")
-
+# IMP! Finaliza a gravação do gráfico no arquivo aberto
 dev.off()
 
 
@@ -119,9 +121,9 @@ plot(1:6, las = 3, xlab = "lty 1:6", ylab = "", main = "Mais opções ao plot")
 ablineclip(v=1, lty=1, col="sienna2", lwd=2)
 ablineclip(v=2, lty=1, col="sienna2", lwd=2)
 ablineclip(v=3, lty=1, col="sienna2", lwd=2)
-ablineclip(v=4, lty=1, col="sienna2", lwd=2)
-ablineclip(v=5, lty=1, col="sienna2", lwd=2)
-ablineclip(v=6, lty=1, col="sienna2", lwd=2)
+ablineclip(v=4, lty=1, col="sienna2", lwd=4)
+ablineclip(v=5, lty=4, col="sienna2", lwd=2)
+ablineclip(v=6, lty=1, col="sienna3", lwd=2)
 ablineclip(v=7, lty=1, col="sienna2", lwd=2)
 
 
@@ -159,10 +161,10 @@ View(df)
 mycol <- c(Asia = "tomato", Europe = "chocolate4", Africa = "dodgerblue2", 
            Americas = "darkgoldenrod1", Oceania = "green4")
 
-# Plot
+# Plot - IMP! Cor por fator
 plot(expectativa ~ pibpercap, data = df_1982, log = "x", col = mycol[continente])
 
-# Função para a escala
+# Função para a escala - IMP! Gráfico de bolhas a partir de uma escala
 mycex <- function(var, r, f = sqrt){
   x = f(var)
   x_scaled = (x - min(x))/(max(x) - min(x))
