@@ -12,7 +12,7 @@ getwd()
 ?boxplot
 ?sleep
 
-# Permite utilizar as colunas sem especificar o nome do dataset
+# Permite utilizar as colunas sem especificar o nome do dataset - IMP!!
 attach(sleep)
 View(sleep)
 
